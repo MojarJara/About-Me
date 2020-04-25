@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  color: #40514e;
+}
+
+a {
+  color: #11999e;
+  font-family: "Montserrat", sans-serif;
+  margin: 20px 10px;
+  text-decoration: none;
+
+}
+a:hover{
+    color: #eaf6f6;
+}
+p {
+    line-height: 2; 
+}
+
+hr {
+  border-style: dotted none none;
+  border-color: #E0EBE8;
+  border-width: 5px;
+  width: 4%;
+  margin: 100px auto 100px auto;
+}
+h1 {
+  font-size: 5.625rem;
+  margin: 2.6rem auto 0 auto;
+  font-family: "Sacramento", cursive;
+
+  color: #66bfbf;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: #66bfbf;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #11999e;
+}
+
+.top-container {
+  background-color: #E0EBE8;
+  position: relative;
+  padding: 50px 0 20px 0;
+  /* padding-top: 100px; */
+}
+.middle-container {
+    margin: 100px 0 100px 0;
+}
+.bottom-container {
+    background-color: #66BFBF;
+    margin-bottom: 0;
+    padding: 50px 0 20px 0;
+}
+
+/* Navigation */
+
+.brand-logo {
+  border-radius: 100%;
+  background-color:#e8fcf6;
+}
+.navbar {
+  padding:0 20%;
+  background-color: #E0EBE8;
+
+}
+
+/* Title Area */
+.row {
+  margin:0;
+}
+.intro {
+    width:30%;
+    margin:0 auto ;
+}
+
+.top-cloud {
+}
+.bottom-cloud {
+margin: 0 150px 0 0 ;
+}
+#mountain-holder{
+  max-width: 800px;
+  margin: 0 auto;
+}
+.mountain-img {
+  width:100%;
+}
+
+.profile-img {
+ height:100px;
+ width:100px;
+ border-radius: 100%;
+}
+/* Skill area */
+.skill-combo {
+ padding: 50px 0;
+}
+
+.skill-img {
+  height:100px;
+  width:100px;
+  border-radius: 100%;
+}
+.img-show{
+visibility: visible;
+}
+.img-hide{
+  visibility: hidden;
+}
+.skill-text-L{
+  width:100%;
+  margin:0 auto;
+  text-align: justify;
+}
+.skill-text-R{
+  width:100%;
+  margin:0 auto;
+  text-align: justify;
+}
+/* Contact Area */
+
+#contact{
+  padding-bottom:150px;
+}
+
+.contact-message {
+    width: 40%;
+    margin: 40px auto 60px;
+}
+
+.copyright {
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+.btn {
+    background: #11CDD4;
+    background-image: -webkit-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -moz-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -ms-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -o-linear-gradient(top, #11CDD4, #11999E);
+    background-image: linear-gradient(to bottom, #11CDD4, #11999E);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 1px 1px 20px 0px #000000;
+    -webkit-box-shadow: 1px 1px 20px 0px #000000;
+    -moz-box-shadow: 1px 1px 20px 0px #000000;
+    text-shadow: 1px 1px 20px #000000;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    }
+    
+    .btn:hover {
+    background: #30E3CB;
+    background-image: -webkit-linear-gradient(top, #30E3CB, #2BC4ED);
+    background-image: -moz-linear-gradient(top, #30E3CB, #2BC4ED);
+    background-image: -ms-linear-gradient(top, #30E3CB, #2BC4ED);
+    background-image: -o-linear-gradient(top, #30E3CB, #2BC4ED);
+    background-image: linear-gradient(to bottom, #30E3CB, #2BC4ED);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    }
+
+    /* responsive behaviour */
+    @media only screen and (max-width: 1200px) {
+      [class*="img-hide"] {
+        visibility: hidden;
+      }
+    }
+    @media only screen and (max-width: 992px) {
+      [class*="img-hide"] {
+        visibility: visible;
+      }
+      [class*="img-show"] {
+        visibility: hidden;
+      }
+    }
+
+
+    @media only screen and (max-width: 768px) {
+      /* For tablets: */
+      [class*="intro"] {
+        width: 50%;
+      }
+      [class*="navbar"] {
+        padding:0 5%;
+      }
+      [class*="contact-message"] {
+        width: 60%;
+      }
+      [class*="img-hide"] {
+        visibility: visible;
+      }
+    }
+    @media only screen and (max-width: 540px) {
+      /* For mobile phones: */
+      [class*="intro"] {
+        width: 100%;
+      }
+      [class*="navbar"] {
+        padding:0 2%;
+      }
+      [class*="contact-message"] {
+        width: 100%;
+      }
+      [class*="mountain-img"] {
+        width: 100%;
+      }
+      [class*="img-hide"] {
+        visibility: visible;
+      }
+    }
